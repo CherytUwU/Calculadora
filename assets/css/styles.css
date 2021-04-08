@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --background-primary: #f1f1f1;
+    --background-button: #eeeeee;
+}
+
+/* ///////////// SCROLL BAR /////////// */
+#resultado::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 8px;    /* Tamaño del scroll en horizontal */
+}
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+#resultado::-webkit-scrollbar-thumb {
+    background: var(--light-color-thumb-scroll);
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+#resultado::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+#resultado::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+/* ///////////// TRACK ////////////// */
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+#resultado::-webkit-scrollbar-track {
+    background: var(--light-color-track-scroll);
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo cuando esté en active o hover */
+#resultado::-webkit-scrollbar-track:hover,
+#resultado::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+
+.calculadora{
+    display: block;
+    margin: 0 auto;
+    padding: 7px;
+    background: var(--background-primary);
+    width: 310px;
+    height: 470px;
+    border-radius: 20px;
+}
+
+.calculadora td button{
+    display: block;
+    width: 70px;
+    height: 70px;
+    font-size: 25px;
+    border: 0px;
+    background: var(--background-button);
+}
+
+.calculadora td button:hover{
+    border: 1px solid #aaa;
+}
+
+#igual,
+#reset{
+    background: rgb(230, 230, 230);
+}
+
+#resultado{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
+    width: 290px;
+    height: 100px;
+    line-height: 100px;
+    background: #fff;
+    border-radius: 20px;
+    overflow-y: scroll;
+}
+
+.title{
+    width: 20%;
+    margin: 20px auto;
+    font-size: 24px;
+    text-align: center;
+}
